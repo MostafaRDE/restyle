@@ -29,25 +29,25 @@ for align in center justify left right
     $lg[".text-lg-" + align] = $xxs[".text-xxs-" + align]
     $xl[".text-xl-" + align] = $xxs[".text-xxs-" + align]
 
-$rtl['text-start'] = $ltr['text-end'] = {
+$rtl['.text-start'] = $ltr['.text-end'] = {
     'text-align': right !important
 }
-$xxs[".rtl .text-xxs-start"] = $xxs[".ltr .text-xxs-end"] = $ltr['text-end']
-$xs[".rtl .text-xs-start"] = $xs[".ltr .text-xs-end"] = $ltr['text-end']
-$sm[".rtl .text-sm-start"] = $sm[".ltr .text-sm-end"] = $ltr['text-end']
-$md[".rtl .text-md-start"] = $md[".ltr .text-md-end"] = $ltr['text-end']
-$lg[".rtl .text-lg-start"] = $lg[".ltr .text-lg-end"] = $ltr['text-end']
-$xl[".rtl .text-xl-start"] = $xl[".ltr .text-xl-end"] = $ltr['text-end']
+$xxs[".rtl .text-xxs-start"] = $xxs[".ltr .text-xxs-end"] = $ltr['.text-end']
+$xs[".rtl .text-xs-start"] = $xs[".ltr .text-xs-end"] = $ltr['.text-end']
+$sm[".rtl .text-sm-start"] = $sm[".ltr .text-sm-end"] = $ltr['.text-end']
+$md[".rtl .text-md-start"] = $md[".ltr .text-md-end"] = $ltr['.text-end']
+$lg[".rtl .text-lg-start"] = $lg[".ltr .text-lg-end"] = $ltr['.text-end']
+$xl[".rtl .text-xl-start"] = $xl[".ltr .text-xl-end"] = $ltr['.text-end']
 
-$rtl['text-end'] = $ltr['text-start'] = {
+$rtl['.text-end'] = $ltr['.text-start'] = {
     'text-align': left !important
 }
-$xxs[".rtl .text-xxs-end"] = $xxs[".ltr .text-xxs-start"] = $ltr['text-start']
-$xs[".rtl .text-xs-end"] = $xs[".ltr .text-xs-start"] = $ltr['text-start']
-$sm[".rtl .text-sm-end"] = $sm[".ltr .text-sm-start"] = $ltr['text-start']
-$md[".rtl .text-md-end"] = $md[".ltr .text-md-start"] = $ltr['text-start']
-$lg[".rtl .text-lg-end"] = $lg[".ltr .text-lg-start"] = $ltr['text-start']
-$xl[".rtl .text-xl-end"] = $xl[".ltr .text-xl-start"] = $ltr['text-start']
+$xxs[".rtl .text-xxs-end"] = $xxs[".ltr .text-xxs-start"] = $ltr['.text-start']
+$xs[".rtl .text-xs-end"] = $xs[".ltr .text-xs-start"] = $ltr['.text-start']
+$sm[".rtl .text-sm-end"] = $sm[".ltr .text-sm-start"] = $ltr['.text-start']
+$md[".rtl .text-md-end"] = $md[".ltr .text-md-start"] = $ltr['.text-start']
+$lg[".rtl .text-lg-end"] = $lg[".ltr .text-lg-start"] = $ltr['.text-start']
+$xl[".rtl .text-xl-end"] = $xl[".ltr .text-xl-start"] = $ltr['.text-start']
 
 .font-size
     font-size $font-size !important
