@@ -1,0 +1,145 @@
+// LTR Direction
+for value in e s // e: end, s: start
+    if value == e
+        $ltr[".me-auto"] = {
+                        margin-right: auto !important
+                    }
+        $ltr[".pe-auto"] = {
+                        padding-right: auto !important
+                    }
+    else
+        $ltr[".ms-auto"] = {
+                        margin-left: auto !important
+                    }
+        $ltr[".ps-auto"] = {
+                        padding-left: auto !important
+                    }
+    $xxs[".ltr .m" + value + "-xxs-auto"] = $ltr[".m" + value + "-auto"]
+    $xs[".ltr .m" + value + "-xs-auto"] = $ltr[".m" + value + "-auto"]
+    $sm[".ltr .m" + value + "-sm-auto"] = $ltr[".m" + value + "-auto"]
+    $md[".ltr .m" + value + "-md-auto"] = $ltr[".m" + value + "-auto"]
+    $lg[".ltr .m" + value + "-lg-auto"] = $ltr[".m" + value + "-auto"]
+    $xl[".ltr .m" + value + "-xl-auto"] = $ltr[".m" + value + "-auto"]
+    $xxs[".ltr .p" + value + "-xxs-auto"] = $ltr[".p" + value + "-auto"]
+    $xs[".ltr .p" + value + "-xs-auto"] = $ltr[".p" + value + "-auto"]
+    $sm[".ltr .p" + value + "-sm-auto"] = $ltr[".p" + value + "-auto"]
+    $md[".ltr .p" + value + "-md-auto"] = $ltr[".p" + value + "-auto"]
+    $lg[".ltr .p" + value + "-lg-auto"] = $ltr[".p" + value + "-auto"]
+    $xl[".ltr .p" + value + "-xl-auto"] = $ltr[".p" + value + "-auto"]
+
+for value in e s // e: end, s: start
+    if value == e
+        for i in 0..30
+            $key = i * 5
+            $ltr[".me-" + $key] = {
+                            margin-right: unit($key, 'px') !important
+                        }
+            $ltr[".pe-" + $key] = {
+                            padding-right: unit($key, 'px') !important
+                        }
+            $xxs[".ltr .m" + value + "-xxs-" + $key] = $ltr[".m" + value + "-" + $key]
+            $xs[".ltr .m" + value + "-xs-" + $key] = $ltr[".m" + value + "-" + $key]
+            $sm[".ltr .m" + value + "-sm-" + $key] = $ltr[".m" + value + "-" + $key]
+            $md[".ltr .m" + value + "-md-" + $key] = $ltr[".m" + value + "-" + $key]
+            $lg[".ltr .m" + value + "-lg-" + $key] = $ltr[".m" + value + "-" + $key]
+            $xl[".ltr .m" + value + "-xl-" + $key] = $ltr[".m" + value + "-" + $key]
+            $xxs[".ltr .p" + value + "-xxs-" + $key] = $ltr[".p" + value + "-" + $key]
+            $xs[".ltr .p" + value + "-xs-" + $key] = $ltr[".p" + value + "-" + $key]
+            $sm[".ltr .p" + value + "-sm-" + $key] = $ltr[".p" + value + "-" + $key]
+            $md[".ltr .p" + value + "-md-" + $key] = $ltr[".p" + value + "-" + $key]
+            $lg[".ltr .p" + value + "-lg-" + $key] = $ltr[".p" + value + "-" + $key]
+            $xl[".ltr .p" + value + "-xl-" + $key] = $ltr[".p" + value + "-" + $key]
+    else
+        for i in 0..30
+            $key = i * 5
+            $ltr[".ms-" + $key] = {
+                            margin-left: unit($key, 'px') !important
+                        }
+            $ltr[".ps-" + $key] = {
+                            padding-left: unit($key, 'px') !important
+                        }
+            $xxs[".ltr .m" + value + "-xxs-" + $key] = $ltr[".m" + value + "-" + $key]
+            $xs[".ltr .m" + value + "-xs-" + $key] = $ltr[".m" + value + "-" + $key]
+            $sm[".ltr .m" + value + "-sm-" + $key] = $ltr[".m" + value + "-" + $key]
+            $md[".ltr .m" + value + "-md-" + $key] = $ltr[".m" + value + "-" + $key]
+            $lg[".ltr .m" + value + "-lg-" + $key] = $ltr[".m" + value + "-" + $key]
+            $xl[".ltr .m" + value + "-xl-" + $key] = $ltr[".m" + value + "-" + $key]
+            $xxs[".ltr .p" + value + "-xxs-" + $key] = $ltr[".p" + value + "-" + $key]
+            $xs[".ltr .p" + value + "-xs-" + $key] = $ltr[".p" + value + "-" + $key]
+            $sm[".ltr .p" + value + "-sm-" + $key] = $ltr[".p" + value + "-" + $key]
+            $md[".ltr .p" + value + "-md-" + $key] = $ltr[".p" + value + "-" + $key]
+            $lg[".ltr .p" + value + "-lg-" + $key] = $ltr[".p" + value + "-" + $key]
+            $xl[".ltr .p" + value + "-xl-" + $key] = $ltr[".p" + value + "-" + $key]
+
+// RTL Direction
+for value in e s // e: end, s: start
+    if value == e
+        $rtl[".me-auto"] = {
+                        margin-left: auto !important
+                    }
+        $rtl[".pe-auto"] = {
+                        padding-left: auto !important
+                    }
+    else
+        $rtl[".ms-auto"] = {
+                        margin-right: auto !important
+                    }
+        $rtl[".ps-auto"] = {
+                        padding-right: auto !important
+                    }
+    $xxs[".rtl .m" + value + "-xxs-auto"] = $rtl[".m" + value + "-auto"]
+    $xs[".rtl .m" + value + "-xs-auto"] = $rtl[".m" + value + "-auto"]
+    $sm[".rtl .m" + value + "-sm-auto"] = $rtl[".m" + value + "-auto"]
+    $md[".rtl .m" + value + "-md-auto"] = $rtl[".m" + value + "-auto"]
+    $lg[".rtl .m" + value + "-lg-auto"] = $rtl[".m" + value + "-auto"]
+    $xl[".rtl .m" + value + "-xl-auto"] = $rtl[".m" + value + "-auto"]
+    $xxs[".rtl .p" + value + "-xxs-auto"] = $rtl[".p" + value + "-auto"]
+    $xs[".rtl .p" + value + "-xs-auto"] = $rtl[".p" + value + "-auto"]
+    $sm[".rtl .p" + value + "-sm-auto"] = $rtl[".p" + value + "-auto"]
+    $md[".rtl .p" + value + "-md-auto"] = $rtl[".p" + value + "-auto"]
+    $lg[".rtl .p" + value + "-lg-auto"] = $rtl[".p" + value + "-auto"]
+    $xl[".rtl .p" + value + "-xl-auto"] = $rtl[".p" + value + "-auto"]
+
+for value in e s // e: end, s: start
+    if value == e
+        for i in 0..30
+            $key = i * 5
+            $rtl[".me-" + $key] = {
+                margin-left: unit($key, 'px') !important
+            }
+            $rtl[".pe-" + $key] = {
+                padding-left: unit($key, 'px') !important
+            }
+            $xxs[".rtl .m" + value + "-xxs-" + $key] = $rtl[".m" + value + "-" + $key]
+            $xs[".rtl .m" + value + "-xs-" + $key] = $rtl[".m" + value + "-" + $key]
+            $sm[".rtl .m" + value + "-sm-" + $key] = $rtl[".m" + value + "-" + $key]
+            $md[".rtl .m" + value + "-md-" + $key] = $rtl[".m" + value + "-" + $key]
+            $lg[".rtl .m" + value + "-lg-" + $key] = $rtl[".m" + value + "-" + $key]
+            $xl[".rtl .m" + value + "-xl-" + $key] = $rtl[".m" + value + "-" + $key]
+            $xxs[".rtl .p" + value + "-xxs-" + $key] = $rtl[".p" + value + "-" + $key]
+            $xs[".rtl .p" + value + "-xs-" + $key] = $rtl[".p" + value + "-" + $key]
+            $sm[".rtl .p" + value + "-sm-" + $key] = $rtl[".p" + value + "-" + $key]
+            $md[".rtl .p" + value + "-md-" + $key] = $rtl[".p" + value + "-" + $key]
+            $lg[".rtl .p" + value + "-lg-" + $key] = $rtl[".p" + value + "-" + $key]
+            $xl[".rtl .p" + value + "-xl-" + $key] = $rtl[".p" + value + "-" + $key]
+    else
+        for i in 0..30
+            $key = i * 5
+            $rtl[".ms-" + $key] = {
+                margin-right: unit($key, 'px') !important
+            }
+            $rtl[".ps-" + $key] = {
+                padding-right: unit($key, 'px') !important
+            }
+            $xxs[".rtl .m" + value + "-xxs-" + $key] = $rtl[".m" + value + "-" + $key]
+            $xs[".rtl .m" + value + "-xs-" + $key] = $rtl[".m" + value + "-" + $key]
+            $sm[".rtl .m" + value + "-sm-" + $key] = $rtl[".m" + value + "-" + $key]
+            $md[".rtl .m" + value + "-md-" + $key] = $rtl[".m" + value + "-" + $key]
+            $lg[".rtl .m" + value + "-lg-" + $key] = $rtl[".m" + value + "-" + $key]
+            $xl[".rtl .m" + value + "-xl-" + $key] = $rtl[".m" + value + "-" + $key]
+            $xxs[".rtl .p" + value + "-xxs-" + $key] = $rtl[".p" + value + "-" + $key]
+            $xs[".rtl .p" + value + "-xs-" + $key] = $rtl[".p" + value + "-" + $key]
+            $sm[".rtl .p" + value + "-sm-" + $key] = $rtl[".p" + value + "-" + $key]
+            $md[".rtl .p" + value + "-md-" + $key] = $rtl[".p" + value + "-" + $key]
+            $lg[".rtl .p" + value + "-lg-" + $key] = $rtl[".p" + value + "-" + $key]
+            $xl[".rtl .p" + value + "-xl-" + $key] = $rtl[".p" + value + "-" + $key]
