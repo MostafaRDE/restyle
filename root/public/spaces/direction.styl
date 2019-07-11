@@ -29,7 +29,7 @@ for value in e s // e: end, s: start
 
 for value in e s // e: end, s: start
     if value == e
-        for i in 0..40
+        for i in 0..30
             $key = i * 5
             $ltr[".me-" + $key] = {
                             margin-right: unit($key, 'px') !important
@@ -50,7 +50,7 @@ for value in e s // e: end, s: start
             $lg[".ltr .p" + value + "-lg-" + $key] = $ltr[".p" + value + "-" + $key]
             $xl[".ltr .p" + value + "-xl-" + $key] = $ltr[".p" + value + "-" + $key]
     else
-        for i in 0..40
+        for i in 0..30
             $key = i * 5
             $ltr[".ms-" + $key] = {
                             margin-left: unit($key, 'px') !important
@@ -123,7 +123,7 @@ for value in e s // e: end, s: start
             $lg[".rtl .p" + value + "-lg-" + $key] = $rtl[".p" + value + "-" + $key]
             $xl[".rtl .p" + value + "-xl-" + $key] = $rtl[".p" + value + "-" + $key]
     else
-        for i in 0..40
+        for i in 0..30
             $key = i * 5
             $rtl[".ms-" + $key] = {
                 margin-right: unit($key, 'px') !important
