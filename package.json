@@ -1,0 +1,33 @@
+{
+  "name": "restyl",
+  "version": "0.3.2",
+  "description": "CSS framework for big projects",
+  "main": "index.styl",
+  "private": false,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "stylus --compress < ./test/index.styl > ./dist/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MostafaRDE/restyle.git"
+  },
+  "keywords": [
+    "restyle",
+    "css",
+    "css3",
+    "framework",
+    "css-framework"
+  ],
+  "author": {
+    "name": "Mostafa Rostam Dokht Effati",
+    "email": "mostafa3.rostamdokht@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MostafaRDE/restyle/issues"
+  },
+  "homepage": "https://github.com/MostafaRDE/restyle#readme"
+}
