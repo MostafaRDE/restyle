@@ -1,6 +1,6 @@
 {
   "name": "restyl",
-  "version": "0.3.2",
+  "version": "0.5.0",
   "description": "CSS framework for big projects",
   "main": "index.styl",
   "private": false,
@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "stylus --compress < ./test/index.styl > ./dist/index.css"
+    "test": "stylus -w test/index.styl -o dist/index.css --compores dist/index.css",
+    "test2": "stylus --include-css -w test/index2.styl -o dist/index2.css"
   },
   "repository": {
     "type": "git",
